@@ -1,64 +1,162 @@
+/* Ajustes generales */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #333;
+    background-color: #f5f5f5;
 }
 
+/* Cabecera */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.header-contenido h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.2rem;
+}
+
+.header-contenido p {
+    margin: 0.3rem 0;
+}
+
+.header-destacado {
+    font-weight: bold;
+}
+
+/* Menú de navegación */
 nav {
     background-color: #333;
-    color: white;
-    padding: 1rem;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    margin: 0;
+    padding: 0.5rem 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
-header {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem 1rem;
+    background-color: #fff;
+}
+
+/* Secciones */
 section {
-    padding: 2rem;
-    max-width: 960px;
-    margin: auto;
+    margin-bottom: 2.5rem;
 }
 
-.catalogo {
+section h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    color: #222;
+}
+
+section p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+/* Listas */
+section ul {
+    margin: 0.5rem 0 1rem 1.2rem;
+}
+
+/* Catálogo */
+.catalogo-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: center;
+    margin-top: 1rem;
 }
 
 .producto {
+    background-color: #fafafa;
     border: 1px solid #ddd;
     padding: 1rem;
-    max-width: 250px;
-    text-align: center;
-    background-color: #f9f9f9;
+    width: calc(50% - 1.5rem);
+    max-width: 320px;
 }
 
+.producto img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.producto h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.catalogo-nota {
+    margin-top: 1.5rem;
+    font-style: italic;
+}
+
+/* Contacto */
+.contacto-datos p {
+    margin: 0.3rem 0;
+}
+
+.contacto-datos a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contacto-datos a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 footer {
-    background-color: #444;
-    color: white;
+    background-color: #222;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .catalogo-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.3rem 0;
+    }
 }
