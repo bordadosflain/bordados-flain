@@ -3,7 +3,7 @@
 --------------------------------*/
 .hero {
     background: url('IMG/banner-flain.jpg') center/cover no-repeat;
-    height: 55vh; /* más pequeño para que se vea completo */
+    height: 50vh; /* más pequeño para que se vea entero */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,27 +14,28 @@
 /* Contenedor del texto */
 .hero-content {
     background: rgba(0, 0, 0, 0.45); /* fondo oscuro más suave */
-    padding: 25px 35px;
+    padding: 20px 30px;
     border-radius: 8px;
     max-width: 700px;
 }
 
 /* Título principal */
 .hero h1 {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 /* Subtexto */
 .hero p {
-    font-size: 17px;
+    font-size: 16px;
     margin: 0;
 }
 
-/* Eliminamos el botón del banner */
+/* Ocultar el botón del banner */
 .hero .btn {
     display: none;
 }
+
 
 .hero h1 {
     font-size: 40px;
