@@ -53,12 +53,11 @@ header {
 .nav-links li a:hover {
     color: #ddd;
 }
-
 /* ------------------------------
    HERO / BANNER
 --------------------------------*/
 .hero {
-    background: url('img/banner-bordado.jpg') center/cover no-repeat;
+    background: url('img/banner-flain.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -95,6 +94,7 @@ header {
 .btn:hover {
     background: #ddd;
 }
+
 
 /* ------------------------------
    SECCIONES
