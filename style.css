@@ -1,9 +1,54 @@
 /* ------------------------------
+   GENERAL
+--------------------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ------------------------------
+   NAVBAR
+--------------------------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #000;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ------------------------------
    HERO / BANNER AJUSTADO
 --------------------------------*/
 .hero {
     background: url('IMG/banner-flain.jpg') center/cover no-repeat;
-    height: 50vh; /* altura reducida para que no se corte */
+    height: 40vh; /* MÁS PEQUEÑO */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,27 +56,48 @@
     color: #fff;
 }
 
-/* Contenedor del texto */
 .hero-content {
-    background: rgba(0, 0, 0, 0.45); /* fondo oscuro suave */
-    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 18px 28px;
     border-radius: 8px;
-    max-width: 700px;
+    max-width: 650px;
 }
 
-/* Título principal */
 .hero h1 {
-    font-size: 34px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 8px;
 }
 
-/* Subtexto */
 .hero p {
-    font-size: 16px;
+    font-size: 15px;
     margin: 0;
 }
 
-/* Ocultar el botón del banner */
-.hero .btn {
-    display: none;
+/* ------------------------------
+   BOTÓN CATÁLOGO
+--------------------------------*/
+.catalogo-btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.catalogo-btn:hover {
+    background: #444;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
 }
