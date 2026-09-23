@@ -1,8 +1,43 @@
-/* Banner */
+/* NAVBAR */
+.navbar {
+    background: #111;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* BANNER */
 .banner {
     width: 100%;
-    height: 350px;
-    background-image: url('banner-flain.jpg');
+    height: 380px;
+    background-image: url('img/banner-flain.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,45 +49,45 @@
 }
 
 .banner-content h1 {
-    font-size: 48px;
+    font-size: 50px;
     margin: 0;
     text-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .banner-content h2 {
-    font-size: 24px;
+    font-size: 26px;
     margin-top: 10px;
     text-shadow: 0 3px 8px rgba(0,0,0,0.4);
 }
 
-/* Intro */
+/* INTRO */
 .intro {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 50px auto;
     padding: 20px;
     text-align: center;
 }
 
 .intro h2 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 
 .intro p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.7;
     color: #444;
 }
 
-/* Servicios */
+/* SERVICIOS */
 .servicios {
     background: #f5f5f5;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .servicios h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 40px;
 }
 
@@ -78,61 +113,69 @@
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.servicio h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.servicio p {
-    color: #555;
-}
-
-
-/* Catálogo */
+/* CATÁLOGO */
 .catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    padding: 60px 20px;
+    background: #fff;
 }
 
-.producto {
-    background: #fafafa;
-    padding: 1rem;
-    border-radius: 10px;
+.catalogo h2 {
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
+    font-size: 34px;
+    margin-bottom: 40px;
 }
 
-.producto:hover {
-    transform: translateY(-4px);
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.producto img {
+.item {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.item img {
     width: 100%;
-    height: 160px; /* más pequeñas */
-    object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-.producto h3 {
-    margin-top: 0.8rem;
-    font-size: 1.1rem;
-    color: #222;
+.item h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
-.producto p {
-    font-size: 0.9rem;
+.item p {
     color: #555;
 }
 
-/* Footer */
-footer {
+/* CONTACTO */
+.contacto {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    background: #222;
-    color: #fff;
-    margin-top: 2rem;
 }
+
+.contacto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
 
